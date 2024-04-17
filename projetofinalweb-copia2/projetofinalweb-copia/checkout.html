@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- BootStrap Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<!-- fechar BootsStrap icons -->
+
+	<title>Urubu do pix</title>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="brand">
+				<div class="logo">
+					<a href="index.html">
+						<img src="logo.png" width="200px">
+						<div class="logo-text">
+							<p class="big-logo">UrubuDoPix</p>
+							<p class="small-logo">pagando horrores</p>
+						</div>
+					</a>
+				</div> <!-- logo -->
+				<div class="shop-icon">
+					<div class="btn-social">
+						<a href="cadastro.html"><button><i class="bi bi-person"></i></button></a>
+					</div>
+					<div class="btn-social">
+						<button id="cartIcon" data-toggle="modal" data-target="#cartModal">
+							<i class="bi bi-cart-fill"><span class="item-count"></span></i>
+						</button>
+					</div>
+				</div> <!-- shop icons -->
+			</div> <!-- brand -->
+
+			<div class="menu-bar">
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="compras.html">Comprar</a></li>
+						<li><a href="#">Sobre</a></li>
+						<li><a href="#">Contato</a></li>
+					</ul>
+				</div>
+
+			</div> <!-- menu -->
+
+		</div> <!-- container -->
+	</header> <!-- header -->
+
+
+	<div class="container">
+		<main>
+			<h2>Carrinho de compras</h2>
+			<div class="cart-page">
+				<div class="cart-items">
+					<table class="cart-table">
+						<thead>
+							<tr>
+								<th colspan="3">Itens do carrinho</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="cart-summary">
+					<div class="checkout-total">
+						<h3>Resumo do carrinho</h3>
+						<ul>
+							<li>Carrinho total <span style="float: right;">Rs.1200</span></li>
+							<li>Digite o cupom:</li>
+							<input type="text">
+							<li><a class="cupom" href="checkout.html">Aplicar cupom</a></li>
+							<li><a id ="finalizar-compra" >Finalizar compra</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main> <!-- Main Area -->
+	</div>
+
+	<footer>
+		<div class="contact-info">
+			<h3>Entre em Contato</h3>
+			<p>Endereço: Rua ABC, 123</p>
+			<p>Email: contato@loja.com</p>
+			<p>Telefone: (11) 1234-5678</p>
+		</div>
+	</footer>
+</body>
+
+</html>
